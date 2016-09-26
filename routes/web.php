@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/news/{name?}', function ($name = "Autoliebhaber") {
+    return view('news',
+        ['name' => $name]);
+   // return view('news');
+   // return "<h1>test</h1>";
+});
