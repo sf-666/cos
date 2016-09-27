@@ -20,6 +20,10 @@ Route::get('/news/{name?}', function ($name = "Autoliebhaber") {
 });
 */
 
+Route::get('/bootstrap', function () {
+    return view('firstbootstrap');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
