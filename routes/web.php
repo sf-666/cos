@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 /*
 Route::get('/news/{name?}', function ($name = "Autoliebhaber") {
     return view('news',
@@ -37,9 +33,6 @@ Route::get('/most-wanted', function () {
     return view('most-wanted');
 });
 
-Route::get('/news', function () {
-    return view('news');
-});
 
 Route::get('/newest-cars', function () {
     return view('newest-cars');

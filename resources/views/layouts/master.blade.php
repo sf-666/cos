@@ -10,6 +10,12 @@
 <hr/>
 @yield("content")
 
+
+@section("footer")
+
+    <h1>Footer</h1>
+
+@show
 </body>
 
 </html>

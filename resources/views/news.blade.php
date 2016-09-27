@@ -5,12 +5,14 @@
     @stop
 
 @section("content")
+    @include("elements.greeting")
+    <h1>Hallo Du</h1>
 
-    <h1>Hallo {{$name}}</h1>
+@stop
 
-    @if($name == "ardan")
-        <p>Sanfte grüsse Ardan</p>
-    @else
-        <p>Sanfte grüsse an alle anderen</p>
-    @endif
+
+@section("footer")
+    @parent
+    <h1>Footer2</h1>
+
 @stop
